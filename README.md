@@ -1,27 +1,17 @@
-# Nexitally Homepage - React 复刻版
+# 🚀 Nexitally Homepage
 
-这是一个用 React + Tailwind CSS 复刻的 Nexitally 首页。
+用 React + Tailwind CSS 复刻的 Nexitally 网站首页。
 
-## 🎨 设计特点
+![Nexitally Homepage Preview](https://via.placeholder.com/1200x630/0a0a0f/403ab4?text=Nexitally+Homepage)
 
-- **暗黑科技风格** - 黑色背景 (#000000) 配白色文字和蓝色点缀
-- **响应式设计** - 支持桌面端和移动端
-- **完整还原** - 包含导航栏、Hero区域、特性介绍、定价套餐、页脚
+## ✨ 特性
 
-## 📦 安装步骤
-
-```bash
-# 1. 进入项目目录
-cd nexitally-home
-
-# 2. 安装依赖
-npm install
-
-# 3. 启动开发服务器
-npm run dev
-
-# 4. 打开浏览器访问 http://localhost:3000
-```
+- 🎨 **暗黑科技风** - 黑色背景配蓝色渐变 (#403ab4)
+- 📱 **响应式设计** - 完美支持桌面端和移动端
+- 🎬 **滚动动画** - 元素进入视口时自动滑入
+- 🖱️ **悬停效果** - 卡片、按钮精美悬停交互
+- 🌐 **视差背景** - 浮动光球和网格效果
+- 📦 **模块化代码** - 清晰的组件结构
 
 ## 🛠️ 技术栈
 
@@ -30,45 +20,75 @@ npm run dev
 - **Vite 5** - 构建工具
 - **Lucide React** - 图标库
 
-## 📁 项目结构
-
-```
-nexitally-home/
-├── index.html          # HTML 入口
-├── src/
-│   ├── main.jsx        # React 挂载点
-│   ├── index.css       # 全局样式
-│   └── App.jsx         # 主组件
-├── package.json        # 项目配置
-├── vite.config.js      # Vite 配置
-├── tailwind.config.js  # Tailwind 配置
-└── postcss.config.js   # PostCSS 配置
-```
-
-## 🔗 原始网站
-
-原始网站: https://nexitallysafe.com/
-
-## 📝 功能对照
-
-| 原始网站 | React 版本 |
-|---------|-----------|
-| 顶部导航栏 (Logo + 下拉菜单 + 语言选择) | ✅ 完整还原 |
-| Hero 区域 (NEXITALLY 大标题) | ✅ 完整还原 |
-| 5个特性卡片 | ✅ 完整还原 |
-| 定价套餐展示 | ✅ 完整还原 |
-| 页脚 (Logo + 链接 + 联系方式) | ✅ 完整还原 |
-
-## ⚠️ 注意事项
-
-1. **图片资源**: 项目中的图片链接指向原始网站的静态资源，需要联网才能加载
-2. **功能交互**: 某些交互功能（如语言切换、购物车）需要后端支持
-3. **图标**: 使用 Lucide React 图标库替代了原始网站的 Flaticon
-
-## 🚀 构建生产版本
+## 📦 安装
 
 ```bash
+# 进入项目目录
+cd nexitally-home
+
+# 安装依赖
+npm install
+
+# 启动开发服务器
+npm run dev
+
+# 构建生产版本
 npm run build
 ```
 
-构建后的文件位于 `dist/` 目录。
+## 🏗️ 项目结构
+
+```
+nexitally-home/
+├── public/
+│   └── images/          # 图片资源
+├── src/
+│   ├── App.jsx          # 主组件
+│   ├── Footer.jsx       # 页脚组件
+│   ├── main.jsx         # 入口文件
+│   └── index.css        # 全局样式
+├── index.html           # HTML 入口
+├── package.json         # 项目配置
+├── vite.config.js       # Vite 配置
+├── tailwind.config.js   # Tailwind 配置
+└── postcss.config.js    # PostCSS 配置
+```
+
+## 📄 页面模块
+
+1. **Hero** - 首屏展示，包含统计数据
+2. **Features** - 6个优势特性卡片
+3. **Global Network** - 全球节点地图展示
+4. **Pricing** - 8个定价套餐
+5. **Client Download** - 全平台客户端下载
+6. **Footer** - 页脚导航
+
+## 🎨 设计特点
+
+### 颜色方案
+- 主色调: `#403ab4` (蓝紫色)
+- 背景色: `#0a0a0f` (深黑)
+- 文字: 白色 + 灰色层级
+
+### 动画效果
+- 卡片悬停: 上移 + 缩放 + 发光
+- 按钮悬停: 缩放 + 阴影增强
+- 滚动滑入: `cubic-bezier(0.16, 1, 0.3, 1)` 缓动
+
+## 📝 使用说明
+
+1. 图片资源已链接到原始网站静态资源，需要联网加载
+2. 部分交互功能（如语言切换、购物车）需要后端支持
+3. 图标使用 Lucide React 替代原始 Flaticon
+
+## 🤝 贡献
+
+欢迎提交 Issue 和 Pull Request！
+
+## 📄 许可证
+
+MIT License
+
+---
+
+**原始网站**: https://nexitallysafe.com/
